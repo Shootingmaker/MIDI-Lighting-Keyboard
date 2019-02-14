@@ -6,7 +6,14 @@ Hardware.
 Arduino Uno + NeoPix(WS2812) 128pcs
 
 
+Software.
+Loop MIDI 
+(https://www.tobias-erichsen.de/software/loopmidi.html)
+Hair LessMIDI
+https://projectgus.github.io/hairless-midiserial/
 
+
+Software Setting
 1. Loop MIDI (for Windows.)
   "+" to create new port.
 
