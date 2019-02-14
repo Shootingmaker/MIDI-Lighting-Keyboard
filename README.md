@@ -3,6 +3,7 @@
 I want to make MIDI input LED Lighting Keyboard
 
 [![Watch the video](https://img.youtube.com/vi/wxcFKcL9LIE/maxresdefault.jpg)](https://youtu.be/wxcFKcL9LIE)
+https://www.youtube.com/watch?v=wxcFKcL9LIE
 
 
 Hardware.
