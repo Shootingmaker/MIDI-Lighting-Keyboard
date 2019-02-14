@@ -6,11 +6,11 @@ I want to make MIDI input LED Lighting Keyboard
 https://www.youtube.com/watch?v=wxcFKcL9LIE
 
 
-Hardware.
+#Hardware.
 Arduino Uno + NeoPix(WS2812) 128pcs
 
 
-Software.
+#Software.
 
 Loop MIDI 
 (https://www.tobias-erichsen.de/software/loopmidi.html)
@@ -19,7 +19,7 @@ Hair LessMIDI
 https://projectgus.github.io/hairless-midiserial/
 
 
-Software Setting.
+#Software Setting.
 1. Loop MIDI (for Windows.)
   "+" to create new port.
 
@@ -32,7 +32,7 @@ if you Program Arduino, Loop midi "Serial <-> MIDI Bridge " OFF!
 
 
 
-Problem 
+#Problem 
 1. timing Little delay?
 
 2. After  Lighting.
