@@ -54,3 +54,16 @@ if you Program Arduino, Loop midi "Serial <-> MIDI Bridge " turn OFF!!!
 and "ControlChange"　120 is All sound Off //121 Reset All controller // 123 All Note Off  : All LED OFF
 
 but Still Light LED there...
+
+# 参考
+Arduino MIDI Library の使い方
+https://qiita.com/yudai220/items/3bde9461f282d56d1ac2
+
+DTM技術情報
+https://www.g200kg.com/jp/docs/tech/midi.html
+
+ＭＩＤＩ「超」入門(データ編)
+http://magarchive.halfmoon.jp/nifty/midi/vvesymidi2.html
+
+DTM・宅録で始める音楽ライフ。
+http://takuroq.hatenablog.com/entry/2017/02/21/080000
