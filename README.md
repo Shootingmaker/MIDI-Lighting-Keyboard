@@ -51,10 +51,13 @@ if you Program Arduino, Loop midi "Serial <-> MIDI Bridge " turn OFF!!!
 1. timing Little delay?
 
 2. After  Lighting.
-"Note Off" and "Volocity 0"  //That ch note LED OFF.
-and "ControlChange"　120 is All sound Off //121 Reset All controller // 123 All Note Off  : All LED OFF
+    "Note Off" and "Volocity 0"  //That ch note LED OFF.  
 
-but Still Light LED there...
+    and "ControlChange"  
+
+    120 is All sound Off //121 Reset All controller // 123 All Note Off  : All LED OFF
+
+    but Still Light LED there...
 
 # reference
 Arduino MIDI Library の使い方
