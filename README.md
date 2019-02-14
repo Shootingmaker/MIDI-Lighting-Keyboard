@@ -21,6 +21,14 @@ Hair LessMIDI
 https://projectgus.github.io/hairless-midiserial/
 
 
+# Arduino library
+FortySevenEffects/arduino_midi_library
+https://github.com/FortySevenEffects
+
+adafruit/Adafruit_NeoPixel
+https://github.com/adafruit/Adafruit_NeoPixel
+
+
 # Software Setting.
 1. Loop MIDI (for Windows.)
   "+" to create new port.
