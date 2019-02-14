@@ -34,8 +34,11 @@ https://github.com/adafruit/Adafruit_NeoPixel
   "+" to create new port.
 
 2. Hairless MIDI<-> Serial Bridge
- setting at 38400bps
+
+ setting at File -> Preferences ->  "38400bps"
+ 
  "MIDI In"  set "loopMIDI Port" 
+ 
  "Serial Port " set "Arduino Uno (COM*)"
 
 if you Program Arduino, Loop midi "Serial <-> MIDI Bridge " OFF!
