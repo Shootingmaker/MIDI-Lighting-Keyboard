@@ -2,6 +2,9 @@
 
 I want to make MIDI input LED Lighting Keyboard
 
+[![Watch the video](https://img.youtube.com/vi/wxcFKcL9LIE/maxresdefault.jpg)](https://youtu.be/wxcFKcL9LIE)
+
+
 Hardware.
 Arduino Uno + NeoPix(WS2812) 128pcs
 
