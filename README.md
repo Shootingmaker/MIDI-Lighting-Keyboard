@@ -18,15 +18,15 @@ Loop MIDI
 (https://www.tobias-erichsen.de/software/loopmidi.html)
 
 Hair LessMIDI
-https://projectgus.github.io/hairless-midiserial/
+(https://projectgus.github.io/hairless-midiserial/)
 
 
 # Arduino library
 FortySevenEffects/arduino_midi_library
-https://github.com/FortySevenEffects
+(https://github.com/FortySevenEffects)
 
 adafruit/Adafruit_NeoPixel
-https://github.com/adafruit/Adafruit_NeoPixel
+(https://github.com/adafruit/Adafruit_NeoPixel)
 
 
 # Software Setting.
