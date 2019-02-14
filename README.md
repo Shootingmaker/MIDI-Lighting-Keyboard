@@ -1,13 +1,14 @@
 # MIDI-Lighting-Keyboard
 
-i want to make MIDI input LED Lighting Keyboard
+I want to make MIDI input LED Lighting Keyboard
 
-
+Hardware.
 Arduino Uno + NeoPix(WS2812) 128pcs
 
 
+
 1. Loop MIDI (for Windows.)
- "+" to Creat new port.
+  "+" to create new port.
 
 2. Hairless MIDI<-> Serial Bridge
  setting at 38400bps
@@ -15,6 +16,7 @@ Arduino Uno + NeoPix(WS2812) 128pcs
  "Serial Port " set "Arduino Uno (COM*)"
 
 if you Program Arduino, Loop midi "Serial <-> MIDI Bridge " OFF!
+
 
 
 Problem 
