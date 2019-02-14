@@ -41,7 +41,8 @@ https://github.com/adafruit/Adafruit_NeoPixel
  
    "Serial Port " set "Arduino Uno (COM*)"
 
-if you Program Arduino, Loop midi "Serial <-> MIDI Bridge " OFF!
+# Program with Arduino IDE 
+if you Program Arduino, Loop midi "Serial <-> MIDI Bridge " turn OFF!!!
 
 
 
