@@ -30,7 +30,8 @@ adafruit/Adafruit_NeoPixel
 
 
 # Software Setting.
-1. Loop MIDI (for Windows.)
+1. Loop MIDI (for Windows.)  
+
   "+" to create new port.
 
 2. Hairless MIDI<-> Serial Bridge
