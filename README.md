@@ -9,6 +9,8 @@ https://www.youtube.com/watch?v=wxcFKcL9LIE
 # Hardware.
 Arduino Uno + NeoPix(WS2812) 128pcs
 
+## Hardware Connection.
+ PC USB --> Arduino Uno --> 470 Ohm --> Neopix
 
 # Software.
 
