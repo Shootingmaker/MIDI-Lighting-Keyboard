@@ -55,7 +55,7 @@ and "ControlChange"　120 is All sound Off //121 Reset All controller // 123 All
 
 but Still Light LED there...
 
-# 参考
+# reference
 Arduino MIDI Library の使い方
 https://qiita.com/yudai220/items/3bde9461f282d56d1ac2
 
