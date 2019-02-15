@@ -39,19 +39,34 @@ int delayval = 2; // delay for test
 void handleNoteOn(byte channel, byte pitch, byte velocity)
 {
   digitalWrite(LED,HIGH);        // LED pin on Arduino Uno Blink 
-  //  Select Ch       //　Blink velocity power!                                    / 　Note ON "Velocity = 0" is NOTE Off. 
-  if (channel == 1) {  pixels.setPixelColor(pitch, pixels.Color(0,velocity,0));   } else if (velocity == 0) {pixels.setPixelColor(pitch, pixels.Color(0,0,0)); } 
-  if (channel == 2) {  pixels.setPixelColor(pitch, pixels.Color(0,0,velocity));   } else if (velocity == 0) {pixels.setPixelColor(pitch, pixels.Color(0,0,0)); }
-  if (channel == 3) {  pixels.setPixelColor(pitch, pixels.Color(velocity,0,0));   } else if (velocity == 0) {pixels.setPixelColor(pitch, pixels.Color(0,0,0)); }
-  pixels.show(); 
+  if (velocity == 0) {  // 　Note ON "Velocity = 0" is NOTE Off.
+    pixels.setPixelColor(pitch, pixels.Color(0,0,0));
+    pixels.show(); 
+  } else {
+    switch (channel) {  //  Select Ch       //　Blink velocity power!
+      case 1:
+        pixels.setPixelColor(pitch, pixels.Color(0,velocity,0));
+        break;
+      case 2:
+        pixels.setPixelColor(pitch, pixels.Color(0,0,velocity));
+        break;
+      case 3:
+        pixels.setPixelColor(pitch, pixels.Color(velocity,0,0));
+        break;
+    }
+    pixels.show(); 
+  }
 }
 
 void handleNoteOff(byte channel, byte pitch, byte velocity)
 {
-  if (channel == 1) {  pixels.setPixelColor(pitch, pixels.Color(0,0,0)); }
-  if (channel == 2) {  pixels.setPixelColor(pitch, pixels.Color(0,0,0)); }
-  if (channel == 3) {  pixels.setPixelColor(pitch, pixels.Color(0,0,0)); }
-  pixels.show();
+  switch (channel) {
+    case 1:
+    case 2:
+    case 3:
+      pixels.setPixelColor(pitch, pixels.Color(0,0,0));
+      pixels.show();
+  }
   digitalWrite(LED,LOW);
 }
 
