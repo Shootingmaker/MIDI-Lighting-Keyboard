@@ -42,7 +42,9 @@ adafruit/Adafruit_NeoPixel
 (https://github.com/adafruit/Adafruit_NeoPixel)
 
 Fast LED
-https://github.com/FastLED/FastLED
+https://github.com/FastLED/FastLED  
+Fast LED reference  
+https://github.com/FastLED/FastLED/wiki/Pixel-reference
 
 
 # Software Setting.
