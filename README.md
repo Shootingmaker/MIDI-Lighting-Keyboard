@@ -13,7 +13,8 @@ Arduino Uno + NeoPix(WS2812) 128pcs
  PC USB --> Arduino Uno --> 470 Ohm --> Neopix
 
 # now Testing... Arduino MIDI <-> Serial Bridge
-PATTERN1: LoopMIDI + HairLessMIDI  (because,windows CANNOT open "31250bps" MIDI speed.)
+PATTERN1: LoopMIDI + HairLessMIDI  (because,windows CANNOT open "31250bps" MIDI speed.)  
+
 PATTERN2: Change Arduino USB-MIDI (Use "Moco Lufa(atmega16u2)")
 
 
@@ -26,8 +27,8 @@ Hair LessMIDI
 (https://projectgus.github.io/hairless-midiserial/)
 
 Moco Lufa
-https://github.com/kuwatay/mocolufa
-Click "Raw" to Left Click and "save as a new file" 
+https://github.com/kuwatay/mocolufa  
+Click "Raw" to Left Click and "save as a new file"  
 https://github.com/kuwatay/mocolufa/blob/master/HEX/dualMoco.hex
 
 Flip (for atmega16u2 flash)
@@ -62,12 +63,13 @@ https://github.com/FastLED/FastLED
 if you Program Arduino, Loop midi "Serial <-> MIDI Bridge " turn OFF!!!
 
 # Arduino Uno -> USB-MIDI
-Use "Moco Lufa".
+Use "Moco Lufa".  
+
 If you Windows "Microchip FLIP"
 
-If you Mac "dfu-programmer"
-https://qiita.com/yasuraok/items/8ae995b7484e140b071f
-https://sourceforge.net/projects/dfu-programmer/files/dfu-programmer/
+If you Mac "dfu-programmer"  
+https://qiita.com/yasuraok/items/8ae995b7484e140b071f  
+https://sourceforge.net/projects/dfu-programmer/files/dfu-programmer/  
 
 1. USB Cable off Arduino Uno
 2. ICSP 5-6 Short (atmega16u2 ,near USB connector)
