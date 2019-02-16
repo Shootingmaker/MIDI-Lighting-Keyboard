@@ -9,8 +9,13 @@ https://www.youtube.com/watch?v=wxcFKcL9LIE
 # Hardware.
 Arduino Uno + NeoPix(WS2812) 128pcs
 
-## Hardware Connection.
+# Hardware Connection.
  PC USB --> Arduino Uno --> 470 Ohm --> Neopix
+
+# now Testing... Arduino MIDI <-> Serial Bridge
+PATTERN1: LoopMIDI + HairLessMIDI  (because,windows CANNOT open "31250bps" MIDI speed.)
+PATTERN2: Change Arduino USB-MIDI (Use "Moco Lufa(atmega16u2)")
+
 
 # Software.
 
@@ -20,6 +25,13 @@ Loop MIDI
 Hair LessMIDI
 (https://projectgus.github.io/hairless-midiserial/)
 
+Moco Lufa
+https://github.com/kuwatay/mocolufa
+Click "Raw" to Left Click and "save as a new file" 
+https://github.com/kuwatay/mocolufa/blob/master/HEX/dualMoco.hex
+
+Flip (for atmega16u2 flash)
+https://www.microchip.com/developmenttools/ProductDetails/FLIP
 
 # Arduino library
 FortySevenEffects/arduino_midi_library
@@ -27,6 +39,9 @@ FortySevenEffects/arduino_midi_library
 
 adafruit/Adafruit_NeoPixel
 (https://github.com/adafruit/Adafruit_NeoPixel)
+
+Fast LED
+https://github.com/FastLED/FastLED
 
 
 # Software Setting.
@@ -41,11 +56,28 @@ adafruit/Adafruit_NeoPixel
    "MIDI In"  set "loopMIDI Port" 
  
    "Serial Port " set "Arduino Uno (COM*)"
-
+   
+ 
 # Program with Arduino IDE 
 if you Program Arduino, Loop midi "Serial <-> MIDI Bridge " turn OFF!!!
 
+# Arduino Uno -> USB-MIDI
+Use "Moco Lufa".
+If you Windows "Microchip FLIP"
 
+If you Mac "dfu-programmer"
+https://qiita.com/yasuraok/items/8ae995b7484e140b071f
+https://sourceforge.net/projects/dfu-programmer/files/dfu-programmer/
+
+1. USB Cable off Arduino Uno
+2. ICSP 5-6 Short (atmega16u2 ,near USB connector)
+3. USB Cable Set Arduino Uno
+4. Flash "Flip" or "dfu-programmer"  <dualMoco.hex> at Atmega16U2
+5. ICSP 5-6 Open
+6. USB Cable Off-Set
+
+7. ICSP 4-6 Short to USB Cable Set (Arduino mode)
+8. ICSP 4-6 Open to USB Cable Set (MIDI-USB mode)
 
 # Problem 
 1. timing Little delay?
@@ -57,7 +89,7 @@ if you Program Arduino, Loop midi "Serial <-> MIDI Bridge " turn OFF!!!
 
     120 is All sound Off //121 Reset All controller // 123 All Note Off  : All LED OFF
 
-    but Still Light LED there...
+    but Still Light LED there... Maybe, Serial or Handller Problem...
 
 # reference
 Arduino MIDI Library の使い方
