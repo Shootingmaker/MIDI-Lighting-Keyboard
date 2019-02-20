@@ -8,11 +8,12 @@ source code from Aidafruit NeoPix library example : simple.ino
 
 #include <MIDI.h>
 MIDI_CREATE_DEFAULT_INSTANCE();
+
 // -----------------------------------------------------------------------------
 #include <FastLED.h>
 
 // How many leds in your strip?
-#define NUM_LEDS 144
+#define NUM_LEDS 128
 #define DATA_PIN 3
 
 // Define the array of leds
@@ -126,6 +127,12 @@ void handleControlChange(byte channel , byte number , byte value )
 
 
 // -----------------------------------------------------------------------------
+struct MySettings : public midi::DefaultSettings
+{
+    static const unsigned SysExMaxSize = 1024; // Accept SysEx messages up to 1024 bytes long.
+    static const bool UseRunningStatus = true; // My devices seem to be ok with it.
+    static const long BaudRate = 38400;
+};
 
 void setup()
 {
@@ -143,7 +150,7 @@ void setup()
 
     // All Ch read with MIDI instance initialize.
     MIDI.begin(MIDI_CHANNEL_OMNI);
-    //Serial.begin(38400); //for Hairless MIDI software <-> Serial Bridge
+    Serial.begin(38400); //for Hairless MIDI software <-> Serial Bridge
     // -----------------------------------------------------------------------------
 
     
